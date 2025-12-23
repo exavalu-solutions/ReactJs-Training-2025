@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "label": "Alice in Wonderland",
+    "count":8,
+    "status": "In Stock"
+  },
+  {
+    "id": 2,
+    "label": "Little Women",
+    "count":20,
+    "status": "In Stock"
+  },
+  {
+    "id": 3,
+    "label": "The wizard of Oz",
+    "count":0,
+    "status": "Out of Stock"
+  },
+  {
+    "id": 4,
+    "label": "The Alchemist",
+    "count":1,
+    "status": "In Stock"
+  },
+  {
+    "id": 5,
+    "label": "Harry Potter",
+    "count":0,
+    "status": "Out of Stock"
+  },
+  {
+    "id": 5,
+    "label": "Jane Eyre",
+    "count":2,
+    "status": "In Stock"
+  }
+]
