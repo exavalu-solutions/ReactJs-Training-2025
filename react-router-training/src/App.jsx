@@ -9,10 +9,12 @@ import { Product } from './pages/Product';
 import { Login } from './pages/Login';
 import { Profile } from './pages/Profile';
 import { Settings } from './pages/Settings';
+import { ProtectedRoute } from './components/ProtectedRoute';
 // import './App.css'
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
+  console.log("isLogin >> ", isLogin);
   return (
     <>
       {
@@ -24,7 +26,13 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />
         </Route>
-        <Route path="/about" element={<About />} />
+        <Route path="/about"
+          element={
+            <ProtectedRoute isLogin={isLogin} username="Alice">
+              <About />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productId" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
